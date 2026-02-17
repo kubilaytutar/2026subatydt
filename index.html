@@ -112,7 +112,11 @@
         transition: transform 0.1s ease;
       }
       
-      /* Rozetler (tamamlanma işaretleri) - daha görünür */
+      /* Rozetler (tamamlanma işaretleri) - deploy'da görünür olsun */
+      .bg-white\/30, .bg-white\/25 {
+        background-color: rgba(255, 255, 255, 0.7) !important;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+      }
       .absolute.rounded-full[class*="bg-white/20"] {
         background-color: rgba(255, 255, 255, 0.85) !important;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
